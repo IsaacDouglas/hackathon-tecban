@@ -26,25 +26,25 @@
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uWf-MW-WhB">
                     <rect key="frame" x="25" y="348" width="364" height="85"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XsN-HH-HAx">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="um" translatesAutoresizingMaskIntoConstraints="NO" id="XsN-HH-HAx">
                             <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="XsN-HH-HAx" secondAttribute="height" multiplier="1:1" id="2Mu-XY-9Y4"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-TB-3kU">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dois" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-TB-3kU">
                             <rect key="frame" x="93" y="0.0" width="85" height="85"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="Wnq-TB-3kU" secondAttribute="height" multiplier="1:1" id="w7m-xQ-Vlg"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bfY-5h-c1e">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tres" translatesAutoresizingMaskIntoConstraints="NO" id="bfY-5h-c1e">
                             <rect key="frame" x="186" y="0.0" width="85" height="85"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="bfY-5h-c1e" secondAttribute="height" multiplier="1:1" id="pfL-ra-QYj"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hd0-l0-R4x">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quatro" translatesAutoresizingMaskIntoConstraints="NO" id="hd0-l0-R4x">
                             <rect key="frame" x="279" y="0.0" width="85" height="85"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="hd0-l0-R4x" secondAttribute="height" multiplier="1:1" id="Jed-4g-J0z"/>
@@ -68,5 +68,9 @@
     </objects>
     <resources>
         <image name="card" width="1280" height="663"/>
+        <image name="dois" width="314" height="316"/>
+        <image name="quatro" width="316" height="316"/>
+        <image name="tres" width="312" height="320"/>
+        <image name="um" width="316" height="320"/>
     </resources>
 </document>

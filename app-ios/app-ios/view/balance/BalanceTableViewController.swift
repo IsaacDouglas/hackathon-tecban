@@ -24,6 +24,7 @@ class BalanceTableViewController: UITableViewController {
         self.tableView.addFooterView()
         
         self.navigationItem.title = "Saldos"
+        self.tabBarItem = UITabBarItem(title: "Saldos", image: nil, selectedImage: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {

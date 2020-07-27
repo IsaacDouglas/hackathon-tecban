@@ -25,6 +25,7 @@
 		9066C8F624CE451500F4B981 /* BalanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9066C8F524CE451500F4B981 /* BalanceTableViewController.swift */; };
 		9066C8FA24CE52C800F4B981 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9066C8F824CE52C800F4B981 /* MainViewController.swift */; };
 		9066C8FB24CE52C800F4B981 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9066C8F924CE52C800F4B981 /* MainViewController.xib */; };
+		90A567D724CE68440070C60D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A567D624CE68440070C60D /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		9066C8F524CE451500F4B981 /* BalanceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceTableViewController.swift; sourceTree = "<group>"; };
 		9066C8F824CE52C800F4B981 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9066C8F924CE52C800F4B981 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		90A567D624CE68440070C60D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		9066C8D624CE14EF00F4B981 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				90A567D524CE68040070C60D /* util */,
 				9066C8F724CE52A000F4B981 /* main */,
 				9066C8F424CE450500F4B981 /* balance */,
 				9066C8F124CE42B800F4B981 /* account */,
@@ -165,6 +168,14 @@
 				9066C8F924CE52C800F4B981 /* MainViewController.xib */,
 			);
 			path = main;
+			sourceTree = "<group>";
+		};
+		90A567D524CE68040070C60D /* util */ = {
+			isa = PBXGroup;
+			children = (
+				90A567D624CE68440070C60D /* TabBarController.swift */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9066C8E224CE2C6200F4B981 /* Transactions.swift in Sources */,
+				90A567D724CE68440070C60D /* TabBarController.swift in Sources */,
 				9066C8C324CE143600F4B981 /* AppDelegate.swift in Sources */,
 				9066C8F324CE42CA00F4B981 /* AccountTableViewController.swift in Sources */,
 				9066C8EC24CE3D5700F4B981 /* String.swift in Sources */,

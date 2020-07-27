@@ -31,7 +31,17 @@ class WebViewController: UIViewController {
         webView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor).isActive = true
         webView.navigationDelegate = self
         
-        self.navigationItem.title = "Webview"
+        self.navigationItem.title = "Consentimento"
+        
+        let backbutton = UIButton(type: .custom)
+        backbutton.setTitle("Voltar", for: .normal)
+        backbutton.setTitleColor(navigationController?.navigationBar.tintColor, for: .normal)
+        backbutton.addTarget(self, action: #selector(self.backAction), for: .touchUpInside)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backbutton)
+    }
+    
+    @objc private func backAction() {
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,13 +58,6 @@ class WebViewController: UIViewController {
             print(url)
         }
         task.resume()
-        
-//        let urlAtms = URL(string: "http://localhost:8080/atms")!
-//        URLSession.shared.atmsTask(with: urlAtms) { (atms, response, error) in
-//            if let atms = atms?.prettyPrinted() {
-//                print(atms)
-//            }
-//        }.resume()
     }
 
     private func load(url: String?) {
@@ -75,7 +78,7 @@ extension WebViewController: WKNavigationDelegate {
         if let code = url?.absoluteString.getQueryStringParameter("code") {
             print(code)
             decisionHandler(.cancel)
-            self.navigationController?.popViewController(animated: true)
+            self.dismiss(animated: true, completion: nil)
         } else {
             decisionHandler(.allow)
         }
